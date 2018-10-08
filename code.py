@@ -15,5 +15,18 @@ name = input('Как вас зовут? ')
 print('Привет, %s ' % name)
 print(rules)
 
-player = input('Сделайте свой выбор: %s ' % options)
-comp = input('Сделайте выбор за компьютер: %s ' % options)
+player = str(input('Сделайте свой выбор: %s ' % options))
+comp = str(input('Сделайте выбор за компьютер: %s ' % options))
+
+if player == options[0] and comp == options[1]:
+    print('Вы выиграли')
+elif player == options[1] and comp == options[2]:
+    print('Вы выиграли')
+elif player == options[2] and comp == options[0]:
+    print('Вы выиграли')
+elif comp == options[0] and player == options[1]:
+    print('Компьютер выиграл')
+elif comp == options[1] and player == options[2]:
+    print('Компьютер выиграл')
+elif comp == options[2] and player == options[0]:
+    print('Компьютер выиграл')
