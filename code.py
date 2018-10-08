@@ -18,7 +18,9 @@ print(rules)
 player = str(input('Сделайте свой выбор: %s ' % options))
 comp = str(input('Сделайте выбор за компьютер: %s ' % options))
 
-if player == options[0] and comp == options[1]:
+if player == comp:
+    print('Ничья')
+elif player == options[0] and comp == options[1]:
     print('Вы выиграли')
 elif player == options[1] and comp == options[2]:
     print('Вы выиграли')
