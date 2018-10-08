@@ -15,5 +15,5 @@ name = input('Как вас зовут? ')
 print('Привет, %s ' % name)
 print(rules)
 
-player = input('Сделайте свой выбор: %s ' % options)
-comp = input('Сделайте выбор за компьютер: %s ' % options)
+player = str(input('Сделайте свой выбор: %s ' % options))
+comp = str(input('Сделайте выбор за компьютер: %s ' % options))
