@@ -18,5 +18,8 @@ print(rules)
 player = str(input('Сделайте свой выбор: %s ' % options))
 comp = str(input('Сделайте выбор за компьютер: %s ' % options))
 
-if player == comp:
-    print('Ничья')
+if (player == options[0] or player == options[1] or player == options[2]) and (comp == options[0] or comp == options[1] or comp == options[2]):
+    if player == comp:
+        print('Ничья')
+else:
+    print('Ваша задача выбрать один из трех предметов «Камень», «Ножницы» или «Бумага».')
