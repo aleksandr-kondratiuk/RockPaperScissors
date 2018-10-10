@@ -34,4 +34,4 @@ if (player == options[0] or player == options[1] or player == options[2]) and (c
     elif comp == options[2] and player == options[0]:
         print('Компьютер выиграл')
 else:
-    print('Ваша задача выбрать один из трех предметов «Камень», «Ножницы» или «Бумага».')
+    print('Ваша задача выбрать один из трех предметов %s.' % options)
