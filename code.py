@@ -22,4 +22,4 @@ if (player == options[0] or player == options[1] or player == options[2]) and (c
     if player == comp:
         print('Ничья')
 else:
-    print('Ваша задача выбрать один из трех предметов «Камень», «Ножницы» или «Бумага».')
+    print('Ваша задача выбрать один из трех предметов %s.' % options)
